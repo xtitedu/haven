@@ -1,0 +1,2 @@
+localhost 0:0:0:0:0:0:0:1 - - [2017-06-19 16:22:17] "GET / HTTP/1.1" 302 0 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0" "JSESSIONID=node0tc5aojvof1etj7uo0i0zez800.node0"
+localhost 0:0:0:0:0:0:0:1 - - [2017-06-19 16:22:18] "GET /user.do?method=login HTTP/1.1" 200 269 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0" "JSESSIONID=node0x20duvlfee2j1251ef6euctwb0.node0"

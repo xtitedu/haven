@@ -19,6 +19,22 @@
 			<version>1.8.3</version>
 		</dependency>
 		<dependency>
+			<groupId>commons-dbutils</groupId>
+			<artifactId>commons-dbutils</artifactId>
+			<version>1.6</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+
+		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.38</version>
@@ -31,6 +47,21 @@
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
 				<version>9.4.6.v20170531</version>
+				<configuration>
+					<stopKey>shutdown</stopKey>
+					<stopPort>9966</stopPort>
+					<scanIntervalSeconds>10</scanIntervalSeconds>
+					<requestLog implementation="org.eclipse.jetty.server.NCSARequestLog">
+						<filename>target/access-yyyy_mm_dd.log</filename>
+						<filenameDateFormat>yyyy_MM_dd</filenameDateFormat>
+						<logDateFormat>yyyy-MM-dd HH:mm:ss</logDateFormat>
+						<logTimeZone>GMT+8:00</logTimeZone>
+						<append>true</append>
+						<logServer>true</logServer>
+						<retainDays>120</retainDays>
+						<logCookies>true</logCookies>
+					</requestLog>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

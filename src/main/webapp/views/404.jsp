@@ -4,13 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>天堂商城</title>
+<title>Insert title here</title>
 </head>
 <body>
-<center>
-	<%
-		response.sendRedirect("user.do?method=login");
-	%>
-</center>
+
 </body>
 </html>
