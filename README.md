@@ -51,6 +51,8 @@
 	描述		desc
 	修改时间	updateTime
 	
+	Let her go
+	
 5、商品分类信息
 	类别ID
 	类别名称

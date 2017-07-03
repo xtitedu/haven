@@ -9,7 +9,7 @@
 <body>
 <center>
 	<%
-		response.sendRedirect("user.do?method=login");
+		response.sendRedirect("views/index.jsp");
 	%>
 </center>
 </body>
