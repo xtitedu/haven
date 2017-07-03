@@ -8,7 +8,9 @@
 </head>
 <body>
 <center>
-	<h1>天堂商城</h1>
+	<%
+		response.sendRedirect("views/index.jsp");
+	%>
 </center>
 </body>
 </html>

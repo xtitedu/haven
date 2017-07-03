@@ -1,2 +1,7 @@
 /target/
 target/m2e-wtp/web-resources/META-INF/maven/com.xt/haven/pom.properties
+target/tmp/jsp/org/apache/jsp/index_jsp.java
+target/tmp/jsp/org/apache/jsp/index_jsp.class
+target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+target/m2e-wtp/web-resources/META-INF/maven/com.xt/haven/pom.xml
+target/m2e-wtp/web-resources/META-INF/maven/com.xt/haven/pom.properties
