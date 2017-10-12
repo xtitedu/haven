@@ -1,5 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="ctxPath" value="${pageContext.request.contextPath }" scope="page"></c:set>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,31 +8,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>天堂书店</title>
-
     <!-- Bootstrap -->
-    <link href="${pageContext.request.contextPath }/static/css/bootstrap.min.css" rel="stylesheet">
-    <link href="${pageContext.request.contextPath }/static/css/font-awesome.min.css" rel="stylesheet">
-    <link href="${pageContext.request.contextPath }/static/css/animate.min.css" rel="stylesheet">
-    <link href="${pageContext.request.contextPath }/static/css/main.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="${ctxPath }/static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="${ctxPath }/static/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="${ctxPath }/static/css/animate.min.css"/>
+	<link rel="stylesheet" href="${ctxPath }/static/css/main.min.css" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="${pageContext.request.contextPath }/static/images/favicon.ico">
-
+    <link rel="shortcut icon" href="${ctxPath }/static/images/favicon.ico" />
+    <!-- 
     <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+     -->
 </head>
+<script type="text/javascript">
+	function login(){
+		$.post("${ctxPath }/userLogin.action", 
+				{"userName":$("#inputEmail").val(), "passwd":$("#inputPassword").val()}, 
+				function(data){
+					alert(data);
+				});
+	}
+
+</script>
 <body>
-
- 
-
-
     <div id="wrapper" >
         <div id="page-content-wrapper" class="st-pusher">
             <div class="st-pusher-after"></div>
             <!-- ============================================== HEADER ============================================== -->
-	
 	<header class="header">
-
 		<nav class="navbar navbar-bookshop navbar-static-top" role="navigation">
     <div class="container">
         <div class="row">
@@ -44,108 +48,23 @@
                 </ul><!-- /.nav -->
             </div><!-- /.col -->
             <div class="col-md-3 col-xs-10 col-sm-10 navbar-left">
-
                 <p class='text-center'><a href="#"><span class="icon glyphicon glyphicon-earphone"></span> 0371-5355-5350</a></p>
-
             </div><!-- /.col -->
             <div class="col-md-4 col-sm-2">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden-xs hidden-sm"><a href="contact.html">心愿单</a></li>
                     <li class="hidden-xs hidden-sm"><a href="single-book.html">购物车</a></li>
-                    <li class="hidden-xs hidden-sm"><a href="contact.html">我的账户</a></li>
-                    <li class="icon icon-small hidden-xs"><a data-toggle="modal" data-target="#modal-login-big" href="#"><i class="icon fa fa-lock"></i></a></li>
-                    <li class="icon hidden-lg hidden-sm hidden-md"><a data-toggle="modal" data-target="#modal-login-small" href="#"><i class="icon fa fa-lock"></i></a></li>
+                    <li class="hidden-xs hidden-sm"><a href="contact.html">登陆</a></li>
+                    <li class="hidden-xs hidden-sm"><a href="login.jsp">注册</a></li>
                 </ul><!-- /.nav -->
             </div><!-- /.col -->
         </div><!-- /.row -->
     </div><!-- /.container -->
 </nav><!-- /.navbar -->
-<!-- Modal -->
-<div id="modal-login-big" class="modal login fade hidden-xs"  tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                <div class="text-center">
-                    <ul class="login-list clearfix ">
-                        <li class='active'>登陆</li> 
-                        <li class="divider"></li>
-                        <li><a href="#">注册</a></li>
-                    </ul><!-- /.login-list -->	
-                    <form role="form" class="inner-top-50">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1" class="sr-only">邮箱</label>
-                            <input type="email" class="form-control bookshop-form-control" id="exampleInputEmail1" placeholder="邮箱">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1" class="sr-only">Password</label>
-                            <input type="password" class="form-control bookshop-form-control" id="exampleInputPassword1" placeholder="密码">
-                        </div>
-
-                        <button type="button" class="btn btn-primary btn-uppercase">登陆</button>
-                        <a href="#" class='forgot-password'>&nbsp;&nbsp;&nbsp;&nbsp;忘记密码&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                    </form>
-                </div>
-            </div><!-- /.modal-body -->
-            <div class="modal-footer">
-                <div class="text-center">
-                    <ul class='social-list text-center'>
-                        <li><a href="#" class="facebook"></a></li>
-                        <li><a href="#" class="google-plus"></a></li>
-                        <li><a href="#" class="twitter"></a></li>
-                        <li><a href="#" class="pinterest"></a></li>
-                    </ul><!-- /.social-list -->
-                </div>
-            </div><!-- /.modal-footer -->
-            <a href="#" data-dismiss="modal" class="remove-icon"><i class="fa fa-times"></i></a>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-<!-- Modal -->
-<div id="modal-login-small" class="modal fade login login-xs hidden-sm hidden-lg"  tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                <div class="text-center">
-                    <div class="logo-holder">
-                        <h1 class="logo">天堂书店</h1>
-                        <div class="logo-subtitle">
-                            <span>书的世界</span>
-                        </div><!-- /.logo-subtitle --> 
-                    </div>
-
-                    <form role="form" class="inner-top-50">
-                        <div class="form-group">
-                            <label for="entername" class="sr-only">邮箱</label>
-                            <input type="email" class="form-control bookshop-form-control" id="entername" placeholder="Hezy Theme">
-                        </div>
-                        <div class="form-group">
-                            <label for="enterpassword" class="sr-only">密码</label>
-                            <input type="password" class="form-control bookshop-form-control" id="enterpassword">
-                        </div>
-
-                        <button type="button" class="btn btn-primary btn-block btn-uppercase">登陆</button>
-                        <a href="#" class='forgot-password'>忘记密码</a>
-                    </form>
-                </div>
-            </div><!-- /.modal-body -->
-            <div class="modal-footer">
-                <div class="text-center">
-                    <ul class='social-list text-center'>
-                        <li><a href="#" class="facebook"></a></li>
-                        <li><a href="#" class="google-plus"></a></li>
-                        <li><a href="#" class="twitter"></a></li>
-                        <li><a href="#" class="pinterest"></a></li>
-                    </ul><!-- /.social-list -->
-                </div>
-            </div><!-- /.modal-footer -->
-            <a href="#" data-dismiss="modal" class="remove-icon"><i class="fa fa-times"></i></a>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-		<div class="main-header">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-4 col-md-4 top-search-holder m-t-10">
+<div class="main-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-md-4 top-search-holder m-t-10">
 						<!-- ============================================== SEARCH BAR ============================================== -->
 <form class="search-form" role="search">
 	<div class="form-group">
@@ -159,7 +78,6 @@
 	</button>
 </form>
 <!-- ============================================== SEARCH BAR : END ============================================== -->					</div><!-- /.top-search-holder -->
-
 					<div class="col-xs-12 col-sm-4 col-md-4 text-center logo-holder">
 						<!-- ============================================== LOGO ============================================== -->
 <a href="home.html">
@@ -169,9 +87,8 @@
 	</div><!-- /.logo-subtitle -->
 </a>
 <!-- ============================================== LOGO : END ============================================== -->					</div><!-- /.logo-holder -->
-
-					<div class="col-xs-12  col-md-2 header-shippment hidden-sm m-t-10">
-						<!-- ============================================== FREE DELIVERY ============================================== -->
+<div class="col-xs-12  col-md-2 header-shippment hidden-sm m-t-10">
+	<!-- ============================================== FREE DELIVERY ============================================== -->
 <div class="media free-delivery hidden-xs ">
 	<span class="media-left"><img src="static/images/delivery-icon.png" height="48" width="48" alt=""></span>
 	<div class="media-body">
@@ -179,14 +96,13 @@
 	</div>
 </div>
 <!-- ============================================== FREE DELIVERY : END ============================================== -->					</div><!-- /.header-shippment -->
-
-					<div class="col-xs-12 col-sm-4 col-md-2 animate-dropdown1 top-cart-row m-t-10">
-						<!-- ============================================== SHOPPING CART DROPDOWN ============================================== -->                              
+<div class="col-xs-12 col-sm-4 col-md-2 animate-dropdown1 top-cart-row m-t-10">
+	<!-- ============================================== SHOPPING CART DROPDOWN ============================================== -->                              
 <ul class="clearfix shopping-cart-block list-unstyled">
     <li class="dropdown">
         <a class="menu-toggle-right clearfix" href="/.menu-toggle-right">
             <span class="pull-right cart-right-block">
-                <img src="${pageContext.request.contextPath }/static/images/cart-icon.png" alt="" width="46" height="39" />
+                <img src="${ctxPath }/static/images/cart-icon.png" alt="" width="46" height="39" />
             </span><!-- /.cart-right-block -->
             <span class="pull-right cart-left-block">
                 <span class="cart-block-heading">￥345.39</span>
@@ -197,14 +113,8 @@
 </ul> <!-- /.list-unstyled --> 
 <!-- ============================================== SHOPPING CART DROPDOWN : END ============================================== -->					</div><!-- /.top-cart-row -->
 				</div><!-- /.row -->
-
 			</div><!-- /.container -->
-
 		</div><!-- /.main-header -->
-
-		
-
-
 <!-- ============================================== NAVBAR ============================================== -->
 <div class="header-nav animate-dropdown">
 		<div class="container">			
@@ -268,7 +178,6 @@
                                         </ul>
                                     </div><!-- /.section -->
                                 </div><!-- /.col -->
-
                                 <div class="col-md-2 col-sm-6">
                                     <div class="section">
                                         <h5 class="title">Science</h5>
@@ -282,7 +191,6 @@
                                         </ul>
                                     </div><!-- /.section -->
                                 </div><!-- /.col -->
-
                                 <div class="col-md-2 col-sm-6">
                                     <div class="section">
                                         <h5 class="title">History</h5>
@@ -312,7 +220,6 @@
                                 </div><!-- /.col -->
                             </div>
                         </div>
-
                     </li>
                 </ul>
             </li>
@@ -351,8 +258,6 @@
                         </div>
                     </div>
                 </li>
-                    
-                    
                 </ul>
              </li>
         </ul><!-- /.nav -->
@@ -360,7 +265,6 @@
 </nav><!-- /.yamm -->
 <!-- ============================================================= NAVBAR PRIMARY : END ============================================================= -->			</div><!-- /.nav-bg-class -->
 		</div><!-- /.container -->
-	
 </div><!-- /.header-nav -->
 <!-- ============================================== NAVBAR : END ============================================== -->
 	</header>

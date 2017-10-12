@@ -11,25 +11,25 @@
             <div class="row">
                 <div class="col-md-3 col-sm-4">                                      
                     <div class="book-cover bk-cover product-book-cover">
-                        <img class="img-responsive" alt="" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/book-covers/06.jpg" width="182" height="273" > 
+                        <img class="img-responsive" alt="" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/book-covers/06.jpg" width="182" height="273" > 
                         <div class="fade"></div>
                     </div> <!-- /.book-cover -->                                                          
                 </div><!-- /.col -->
                 <div class="col-md-3 col-sm-4 hidden-xs">
                     <div class="book-cover bk-cover product-book-cover">
-                        <img class="img-responsive" alt="" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/book-covers/07.jpg" width="182" height="273"> 
+                        <img class="img-responsive" alt="" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/book-covers/07.jpg" width="182" height="273"> 
                         <div class="fade"></div>
                     </div> <!-- /.book-cover -->     
                 </div><!-- /.col -->
                 <div class="col-md-3 col-sm-4 hidden-xs ">
                     <div class="book-cover bk-cover product-book-cover">
-                        <img class="img-responsive" alt="" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/book-covers/08.jpg" width="182" height="273"> 
+                        <img class="img-responsive" alt="" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/book-covers/08.jpg" width="182" height="273"> 
                         <div class="fade"></div>
                     </div> <!-- /.book-cover -->     
                 </div><!-- /.col -->
                 <div class="col-md-3 hidden-xs hidden-sm">
                     <div class="book-cover bk-cover product-book-cover">
-                        <img class="img-responsive" alt="" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/book-covers/09.jpg" width="182" height="273"> 
+                        <img class="img-responsive" alt="" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/book-covers/09.jpg" width="182" height="273"> 
                         <div class="fade"></div>
                     </div> <!-- /.book-cover -->     
                 </div><!-- /.col -->
@@ -56,7 +56,7 @@
                         <div class="book">
                             <a href="single-book.html">
                                 <div class="book-cover">
-                                    <img width="140" height="212" alt="" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/book-covers/01.jpg">
+                                    <img width="140" height="212" alt="" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/book-covers/01.jpg">
                                 </div>
                             </a>
                             <div class="book-details clearfix ">
@@ -79,7 +79,7 @@
                     <div class="col-md-3 col-sm-4">
                         <div class="book">
                             <a href="single-book.html"><div class="book-cover">
-                                <img width="140" height="212" alt="" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/book-covers/02.jpg">
+                                <img width="140" height="212" alt="" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/book-covers/02.jpg">
                             </div></a>
                             <div class="book-details clearfix">
                                 <div class="book-description">
@@ -100,7 +100,7 @@
                     <div class="col-md-3 col-sm-4">
                         <div class="book">
                             <a href="single-book.html"><div class="book-cover">
-                                <img width="140" height="212" alt="" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/book-covers/03.jpg">
+                                <img width="140" height="212" alt="" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/book-covers/03.jpg">
                             </div></a>
                             <div class="book-details clearfix">
                                 <div class="book-description">
@@ -121,7 +121,7 @@
                     <div class="col-md-3 hidden-sm">
                         <div class="book">
                             <a href="single-book.html"><div class="book-cover">
-                                <img width="140" height="212" alt="" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/book-covers/04.jpg">
+                                <img width="140" height="212" alt="" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/book-covers/04.jpg">
                             </div></a>
                             <div class="book-details clearfix">
                                 <div class="book-description">
@@ -181,25 +181,25 @@
 		<div class="col-md-10 col-sm-10 center-block clearfix">
 			<div class="col-md-3 col-sm-4">						                
 				<div class="book-cover bk-cover product-book-cover">
-					<img class="img-responsive" alt="" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/book-covers/06.jpg" width="182" height="273" > 
+					<img class="img-responsive" alt="" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/book-covers/06.jpg" width="182" height="273" > 
 					<div class="fade"></div>
 				</div> <!-- /.book-cover -->                        		                		  
 			</div><!-- /.col -->
 			<div class="col-md-3 col-sm-4 hidden-xs">
 				<div class="book-cover bk-cover product-book-cover">
-					<img class="img-responsive" alt="" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/book-covers/07.jpg" width="182" height="273"> 
+					<img class="img-responsive" alt="" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/book-covers/07.jpg" width="182" height="273"> 
 					<div class="fade"></div>
 				</div> <!-- /.book-cover -->     
 			</div><!-- /.col -->
 			<div class="col-md-3 col-sm-4 hidden-xs">
 				<div class="book-cover bk-cover product-book-cover">
-					<img class="img-responsive" alt="" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/book-covers/08.jpg" width="182" height="273"> 
+					<img class="img-responsive" alt="" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/book-covers/08.jpg" width="182" height="273"> 
 					<div class="fade"></div>
 				</div> <!-- /.book-cover -->     
 			</div><!-- /.col -->
 			<div class="col-md-3 hidden-sm hidden-xs">
 				<div class="book-cover bk-cover product-book-cover">
-					<img class="img-responsive" alt="" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/book-covers/09.jpg" width="182" height="273"> 
+					<img class="img-responsive" alt="" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/book-covers/09.jpg" width="182" height="273"> 
 					<div class="fade"></div>
 				</div> <!-- /.book-cover -->     
 			</div><!-- /.col -->	
@@ -263,25 +263,25 @@
 		<div class="col-md-10 col-sm-10 center-block clearfix">
 			<div class="col-md-3 col-sm-4">						                
 				<div class="book-cover bk-cover product-book-cover">
-					<img class="img-responsive" alt="" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/book-covers/c7.jpg" width="182" height="273" > 
+					<img class="img-responsive" alt="" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/book-covers/c7.jpg" width="182" height="273" > 
 					<div class="fade"></div>
 				</div> <!-- /.book-cover -->                        		                		  
 			</div><!-- /.col -->
 			<div class="col-md-3 col-sm-4 hidden-xs">
 				<div class="book-cover bk-cover product-book-cover">
-					<img class="img-responsive" alt="" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/book-covers/c3.jpg" width="182" height="273"> 
+					<img class="img-responsive" alt="" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/book-covers/c3.jpg" width="182" height="273"> 
 					<div class="fade"></div>
 				</div> <!-- /.book-cover -->     
 			</div><!-- /.col -->
 			<div class="col-md-3 col-sm-4 hidden-xs">
 				<div class="book-cover bk-cover product-book-cover">
-					<img class="img-responsive" alt="" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/book-covers/13.jpg" width="182" height="273"> 
+					<img class="img-responsive" alt="" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/book-covers/13.jpg" width="182" height="273"> 
 					<div class="fade"></div>
 				</div> <!-- /.book-cover -->     
 			</div><!-- /.col -->
 			<div class="col-md-3 hidden-xs hidden-sm">
 				<div class="book-cover bk-cover product-book-cover">
-					<img class="img-responsive" alt="" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/book-covers/12.jpg" width="182" height="273"> 
+					<img class="img-responsive" alt="" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/book-covers/12.jpg" width="182" height="273"> 
 					<div class="fade"></div>
 				</div> <!-- /.book-cover -->     
 			</div><!-- /.col -->
@@ -324,7 +324,7 @@
 		<div class="col-md-3 col-sm-6">
 			<div class="meet-team-inner">
 				<div class="team-member">
-					<img class="img-responsive" alt="team" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/team/1.png">
+					<img class="img-responsive" alt="team" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/team/1.png">
 				</div>
 				<h4>Joshua Wilkinson</h4>
 				<span>Managing Director</span>
@@ -335,7 +335,7 @@
 		<div class="col-md-3 col-sm-6">
 			<div class="meet-team-inner">
 				<div class="team-member">
-					<img class="img-responsive" alt="team" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/team/1.png">
+					<img class="img-responsive" alt="team" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/team/1.png">
 				</div>
 				<h4>Kris Warner</h4>
 				<span>Technical Director</span>
@@ -346,7 +346,7 @@
 		<div class="col-md-3 col-sm-6">
 			<div class="meet-team-inner">
 				<div class="team-member">
-					<img class="img-responsive" alt="team" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/team/1.png">
+					<img class="img-responsive" alt="team" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/team/1.png">
 				</div>
 				<h4>Terry Tousled</h4>
 				<span>Designer</span>
@@ -357,7 +357,7 @@
 		<div class="col-md-3 col-sm-6">
 			<div class="meet-team-inner">
 				<div class="team-member">
-					<img class="img-responsive" alt="team" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/team/1.png">
+					<img class="img-responsive" alt="team" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/team/1.png">
 				</div>
 				<h4>Alicia Supergirl</h4>
 				<span>Developer</span>
@@ -391,7 +391,7 @@
                         <div class="book">
                             <a href="single-book.html">
                                 <div class="book-cover">
-                                    <img width="140" height="212" alt="" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/book-covers/01.jpg">
+                                    <img width="140" height="212" alt="" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/book-covers/01.jpg">
                                     <div class="tag">
                                         <span>sale</span>
                                     </div>
@@ -417,7 +417,7 @@
                     <div class="col-md-3 col-sm-4">
                         <div class="book">
                             <a href="single-book.html"><div class="book-cover">
-                                <img width="140" height="212" alt="" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/book-covers/02.jpg">
+                                <img width="140" height="212" alt="" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/book-covers/02.jpg">
                             </div></a>
                             <div class="book-details clearfix">
                                 <div class="book-description">
@@ -438,7 +438,7 @@
                     <div class="col-md-3 col-sm-4">
                         <div class="book">
                             <a href="single-book.html"><div class="book-cover">
-                                <img width="140" height="212" alt="" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/book-covers/03.jpg">
+                                <img width="140" height="212" alt="" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/book-covers/03.jpg">
                             </div></a>
                             <div class="book-details clearfix">
                                 <div class="book-description">
@@ -459,7 +459,7 @@
                     <div class="col-md-3 hidden-sm">
                         <div class="book">
                             <a href="single-book.html"><div class="book-cover">
-                                <img width="140" height="212" alt="" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/book-covers/04.jpg">
+                                <img width="140" height="212" alt="" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/book-covers/04.jpg">
                             </div></a>
                             <div class="book-details clearfix">
                                 <div class="book-description">
@@ -480,7 +480,7 @@
                     <div class="col-md-3 hidden-sm">
                         <div class="book">
                             <a href="single-book.html"><div class="book-cover">
-                                <img width="140" height="212" alt="" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/book-covers/05.jpg">
+                                <img width="140" height="212" alt="" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/book-covers/05.jpg">
                             </div></a>
                             <div class="book-details clearfix">
                                 <div class="book-description">
@@ -512,7 +512,7 @@
 		<div class="row">
 			<div class="blog-post-outer">
 				<div class="col-md-6 col-sm-6 blog-img">
-					<a href="#"><img class="img-responsive" alt="team" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/blog/3.jpg"></a>
+					<a href="#"><img class="img-responsive" alt="team" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/blog/3.jpg"></a>
 					
 				</div>
 				<div class="col-md-6 col-sm-6 blog-content">

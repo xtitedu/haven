@@ -9,7 +9,7 @@
         <div class="footer-module">
             <h4 class="footer-module-title">About this site</h4>
             <div class="footer-module-body m-t-20 clearfix">
-                <p><span class="pull-left"><img src="${pageContext.request.contextPath }/static/images/footer-logo.png" alt="" width="75" height="75"></span>A cras tincidunt, ut tellus et. Gravida scele risque, ipsum sed iacul is, nunc non namtellus. Placerat sed phasellus, purus purus elit. Cras ante eros. Erat vel. Donec vestibulum sed, vel euismod donec. </p>
+                <p><span class="pull-left"><img src="${ctxPath }/static/images/footer-logo.png" alt="" width="75" height="75"></span>A cras tincidunt, ut tellus et. Gravida scele risque, ipsum sed iacul is, nunc non namtellus. Placerat sed phasellus, purus purus elit. Cras ante eros. Erat vel. Donec vestibulum sed, vel euismod donec. </p>
             </div>
         </div>
     </div>
@@ -88,7 +88,7 @@
 	<div class="col-md-12">
 		<div class="pull-left">
 			<ul class="payment-list list-unstyled">
-				<li><a href="#"><img src="${pageContext.request.contextPath }/static/images/payments/1.png" class="img-responsive" height="22" alt=""></a></li>
+				<li><a href="#"><img src="${ctxPath }/static/images/payments/1.png" class="img-responsive" height="22" alt=""></a></li>
 
 			</ul>
 		</div>
@@ -112,7 +112,7 @@
 							<div class="clearfix book cart-book">
 								<a href="single-book.html" class="media-left">
 									<div class="book-cover">
-										<img width="140" height="212" alt="" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/book-covers/01.jpg">
+										<img width="140" height="212" alt="" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/book-covers/01.jpg">
 									</div>
 								</a>
 								<div class="media-body book-details">
@@ -131,7 +131,7 @@
 							<div class="clearfix book cart-book">
 								<a href="single-book.html" class="media-left">
 									<div class="book-cover">
-										<img width="140" height="212" alt="" src="${pageContext.request.contextPath }/static/images/blank.gif" data-echo="${pageContext.request.contextPath }/static/images/book-covers/02.jpg">
+										<img width="140" height="212" alt="" src="${ctxPath }/static/images/blank.gif" data-echo="${ctxPath }/static/images/book-covers/02.jpg">
 									</div>
 								</a>
 								<div class="media-body book-details">
@@ -166,16 +166,16 @@
  
                 </div><!-- /#wrapper -->
 
-    <script src="${pageContext.request.contextPath }/static/js/jquery-1.11.2.min.js"></script>
-    <script src="${pageContext.request.contextPath }/static/js/bootstrap.min.js"></script>
-    <script src="${pageContext.request.contextPath }/static/js/bootstrap-hover-dropdown.min.js"></script>
-    <script src="${pageContext.request.contextPath }/static/js/owl.carousel.min.js"></script>
-    <script src="${pageContext.request.contextPath }/static/js/perfect-scrollbar.min.js"></script>
-    <script src="${pageContext.request.contextPath }/static/js/jquery-ui.min.js"></script>
-    <script src="${pageContext.request.contextPath }/static/js/jquery.customSelect.min.js"></script>    
-    <script src="${pageContext.request.contextPath }/static/js/jquery.easing-1.3.min.js"></script>
-    <script src="${pageContext.request.contextPath }/static/js/wow.min.js"></script>
-    <script src="${pageContext.request.contextPath }/static/js/echo.min.js"></script>
-    <script src="${pageContext.request.contextPath }/static/js/scripts.js"></script>
+    <script src="${ctxPath }/static/js/jquery-1.11.2.min.js"></script>
+    <script src="${ctxPath }/static/js/bootstrap.min.js"></script>
+    <script src="${ctxPath }/static/js/bootstrap-hover-dropdown.min.js"></script>
+    <script src="${ctxPath }/static/js/owl.carousel.min.js"></script>
+    <script src="${ctxPath }/static/js/perfect-scrollbar.min.js"></script>
+    <script src="${ctxPath }/static/js/jquery-ui.min.js"></script>
+    <script src="${ctxPath }/static/js/jquery.customSelect.min.js"></script>    
+    <script src="${ctxPath }/static/js/jquery.easing-1.3.min.js"></script>
+    <script src="${ctxPath }/static/js/wow.min.js"></script>
+    <script src="${ctxPath }/static/js/echo.min.js"></script>
+    <script src="${ctxPath }/static/js/scripts.js"></script>
 </body>
 </html>
